@@ -3,6 +3,7 @@
 #include <vector>
 #include <unistd.h>
 #include <getopt.h>
+#include "aliases.h"
 
 int getopt(int argc, char * const argv[],
        const char *optstring);
@@ -38,6 +39,8 @@ int main(int argc, char* argv[]){
         std::string s(argv[i]); // char array to string
         std::cout << "arg[" << i << "] = " << s << std::endl;
     }
+
+    PrintAlias();
 	return 0;
 }
 
